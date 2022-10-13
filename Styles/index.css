@@ -12,7 +12,7 @@
     justify-content: space-around;
     align-items: center;
     padding:1%;
-    border-bottom: 1px solid rgb(129, 96, 96);
+    border-bottom: 1px solid rgb(184, 64, 64);
 }
 #options{
     width: 100%;
@@ -26,14 +26,14 @@
     width:20%;
     background-color: rgba(75, 109, 95, 0.479);
     text-align: center;
-    color:rgb(158, 134, 97)
+    color:rgb(212, 137, 25)
 }
 
 input {
     color: rgb(167, 122, 122);
     border: none;
     border-radius: 5px;
-    outline-color:  rgb(145, 180, 176);
+    outline-color:  rgb(46, 207, 189);
     padding:1%;
     width:30%;
     background-color: rgba(106, 167, 98, 0.664);
@@ -49,7 +49,7 @@ th {
     padding: 1%;
     background-color: rgb(182, 109, 109);
     border: 1px solid black;
-    color: rgb(131, 125, 125);
+    color: rgb(41, 11, 11);
 }
 form{
     display: flex;
