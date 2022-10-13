@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>vaccination form</title>
+    <link rel="stylesheet" href="./Styles/index.css">
+  </head>
+  <body>
+
+    <div id="nav-wrapper">
+    <div id="navbar">
+     
+      <div id="options">
+        <a href="./index.html">
+          <h2>Home</h2>
+        </a>
+        <a href="./dashboard.html">
+          <h2>Dashboard</h2>
+        </a>
+        <a href="./buy.html">
+          <h2>Delete</h2>
+        </a>
+        <a href="./bookmark.html">
+          <h2>Vaccination</h2>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+ 
+    <div id="create">
+      <form onsubmit="setBooks()">
+        <input id="id" placeholder="ID" type="number"/>
+        <input id="name" placeholder="Book Name" type="text" />
+        <input id="age" placeholder="Age" type="text" />
+        <!-- <input id="desc" placeholder="Book Description" type="text" /> -->
+        <!-- <label for="">Adding Date:-</label> -->
+        <!-- <input type="date" id="added"/> -->
+        <select id="designation">
+          <option value="">Designation</option>
+          <option value="Employee">Employee</option>
+          <option value="Student">Student</option>
+          
+        </select>
+        <select id="priority">
+            <option value="">priority</option>
+            <option value="p0">p0</option>
+            <option value="p1">p1</option>
+            <option value="p2">p2</option>
+            <option value="p3">p3</option>
+        </select>
+        <select id="vaccine">
+            <option value="">Vaccine Type</option>
+            <option value="Covishield">Covishield</option>
+            <option value="Covaxin">Covaxin</option>
+            <option value="sputnik">Sputnik</option>
+            
+        </select>
+        
+        <!-- <input id="price" placeholder="Book's Price" type="number" /> -->
+        <input type="submit" value="Submit" id="button" />
+      </form>
+    </div>
+
+    <script src="./Scripts/index.js"></script>
+
+  </body>
+</html>
