@@ -21,12 +21,10 @@ function myBookMarks () {
           col.style.width = "10%"
           col.style.textAlign = "center"
           col.style.border = "1px solid black"
-          col.style.background = "green"
+          col.style.background = "blue"
           col.style.color = "white"
           col.style.padding = "10px"
-        //   if (val == "Buy") {
-        //     col.addEventListener("click", () => myFunction(obj));
-        //   }
+       
     
           row.appendChild(col);
         }

@@ -3,10 +3,7 @@ function dashboard() {
   
     let tBody = document.getElementById("tBody");
     let infoDiv = document.getElementById('info')
-    // let booksCount = document.getElementById("book-count");
-  
-  
-    // here we are adding the selected buy option to mybooks section and modifying our local storage;
+   
     function myFunction(objData) {
       dashBoardBooks = dashBoardBooks.filter(
         (obj) => obj.inputName !== objData.inputName
@@ -19,11 +16,10 @@ function dashboard() {
           inputName : objData.inputName,
           inputAge : objData.inputAge,
           designation : objData.designation,
-          // inputAdded : objData.inputDate,
+         
           priority :objData.priority,
           vaccine : objData.vaccine,
-          // price : objData.price
-      
+       
       }
   
       localStorage.setItem(
@@ -42,7 +38,7 @@ function dashboard() {
       filteredData();
     }
   
-  // here we are transfering the data to bookmark section 
+ 
   
   function myBookmark(objData) {
       dashBoardBooks = dashBoardBooks.filter(
@@ -57,7 +53,7 @@ function dashboard() {
         inputName : objData.inputName,
         inputAge : objData.inputAge,
         designation : objData.designation,
-        // inputAdded : objData.inputDate,
+      
         priority :objData.priority,
         vaccine : objData.vaccine,
       
@@ -79,12 +75,7 @@ function dashboard() {
     }
   
     let dashBoardBooks = JSON.parse(localStorage.getItem("book-list"));
-    // booksCount.innerHTML = dashBoardBooks.length;
-  
-  
-  
-    // here we are deleting particular element from data after buying or bookmarking;
-  
+   
     function filteredData() {
       for (const obj of dashBoardBooks) {
         const row = document.createElement("tr");
@@ -94,7 +85,7 @@ function dashboard() {
           col.style.width = "10%"
           col.style.textAlign = "center"
           col.style.border = "1px solid black"
-          col.style.background = "green"
+          col.style.background = "blue"
           col.style.color = "white"
           col.style.padding = "10px"
           if (val == "Buy") {
@@ -122,14 +113,12 @@ function dashboard() {
     console.log(dashBoardBooks)
     if(dashBoardBooks.length == 0){
       infoDiv.innerHTML = "No Books are added to the storage";
-      infoDiv.style.color = "gray" 
+      infoDiv.style.color = "green" 
       infoDiv.style.fontSize = "30px"
     }
   
     else{
   
-   
-    // this code will be a default code to load the already added books in the local storage;
   
     for (const obj of dashBoardBooks) {
       const row = document.createElement("tr");
@@ -139,7 +128,7 @@ function dashboard() {
         col.style.width = "10%"
         col.style.textAlign = "center"
         col.style.border = "1px solid black"
-        col.style.background = "green"
+        col.style.background = "blue"
         col.style.color = "white"
         col.style.padding = "10px"
         if (val == "Buy") {

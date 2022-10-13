@@ -1,21 +1,18 @@
-#navbar{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding:1%;
-    border-bottom: 1px solid rgb(184, 179, 179);
-}
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
-    box-sizing: border-box;
-}
+
+
 
 #filter{
     margin-top: 30px;
 }
 #nav-wrapper{
     width:100%
+}
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:1%;
+    border-bottom: 1px solid rgb(129, 96, 96);
 }
 #options{
     width: 100%;
@@ -29,45 +26,52 @@
     width:20%;
     background-color: rgba(75, 109, 95, 0.479);
     text-align: center;
-    color:rgb(250, 248, 245)
+    color:rgb(158, 134, 97)
 }
 
 input {
-    padding:1%;
-    width:30%;
-    background-color: rgba(170, 224, 163, 0.664);
-    font-size: 19px;
-    color: brown;
+    color: rgb(167, 122, 122);
     border: none;
     border-radius: 5px;
-    outline-color:  rgb(38, 190, 170);
+    outline-color:  rgb(145, 180, 176);
+    padding:1%;
+    width:30%;
+    background-color: rgba(106, 167, 98, 0.664);
+    font-size: 19px;
+    
 }
-
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
 th {
     padding: 1%;
-    background-color: brown;
+    background-color: rgb(182, 109, 109);
     border: 1px solid black;
-    color: rgb(54, 42, 42);
+    color: rgb(131, 125, 125);
 }
 form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap:20px;
+    gap:15px;
+    justify-content: center;
+   
 }
 
+
+
+#button{
+    background-color: rgb(211, 184, 135);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
 select{
     padding:1%;
     width:30%;
     background-color: blueviolet;
-    color: #ffff;
-}
-
-#button{
-    background-color: rgb(226, 162, 43);
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    cursor: pointer;
+    color: rgb(219, 201, 201);
 }

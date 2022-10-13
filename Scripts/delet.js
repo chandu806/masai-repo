@@ -6,7 +6,7 @@ function buySectionData () {
 
     if(Delete == null){
         infoDiv.innerHTML = "Nothing is added to bookmarks"
-        infoDiv.style.color = "gray" 
+        infoDiv.style.color = "green" 
         infoDiv.style.fontSize = "30px"
         
     }
@@ -20,12 +20,10 @@ function buySectionData () {
           col.style.width = "10%"
           col.style.textAlign = "center"
           col.style.border = "1px solid black"
-          col.style.background = "green"
+          col.style.background = "blue"
           col.style.color = "white"
           col.style.padding = "10px"
-        //   if (val == "Buy") {
-        //     col.addEventListener("click", () => myFunction(obj));
-        //   }
+      
     
           row.appendChild(col);
         }
